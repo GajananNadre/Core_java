@@ -1,0 +1,10 @@
+package JDBC_ALL_PROBLEM;
+import java.sql.*;
+public class JDBC_FIRST_PROGRAM {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

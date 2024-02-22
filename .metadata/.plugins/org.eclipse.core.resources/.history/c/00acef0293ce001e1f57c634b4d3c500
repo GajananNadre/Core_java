@@ -1,0 +1,10 @@
+package JDBC_PROBLEM;
+
+public class RegisterDriverApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

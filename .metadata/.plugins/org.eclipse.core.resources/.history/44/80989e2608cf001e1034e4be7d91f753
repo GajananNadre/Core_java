@@ -1,0 +1,10 @@
+package JDBC_ALL_PROBLEM;
+
+public class JDBC_FIRST_PROGRAM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

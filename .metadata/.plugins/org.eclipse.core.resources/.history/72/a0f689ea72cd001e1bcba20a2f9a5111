@@ -1,0 +1,19 @@
+package ExceptionHandApp;
+
+public class NullPointerExApp {
+
+	public static void main(String[] args) {
+		int a[];
+		try
+		{
+			a[0]=100;
+			System.out.println(a[0]);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+
+	}
+
+}

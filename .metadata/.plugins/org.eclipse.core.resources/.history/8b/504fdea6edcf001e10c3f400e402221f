@@ -1,0 +1,42 @@
+package org.tech;
+import java.sql.*;
+import java.util.*;
+public class PerformOperationAll {
+
+	public static void main(String[] args) throws SQLException{
+		com.mysql.cj.jdbc.Driver d=new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(d);
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcproblem","root","Gajanan@123");
+		if(conn !=null)
+		{
+			System.out.println("connected succ.......");
+			Statement stmt=conn.createStatement();
+			System.out.println("enter the id name email salary and conatact");
+			Scanner sc=new Scanner(System.in);
+			
+//			sc.nextLine();
+			String name=sc.next();
+			String email=sc.next();
+			int salary=sc.nextInt();
+//			sc.nextLine();
+			String contact=sc.next();
+			int id=sc.nextInt();
+			int value=stmt.executeUpdate("update employ set Ename="+name+",Eemail="+email+",Esal="+salary+",Econtact="+contact+" where Eid="+id );
+			if(value > 0)
+			{
+				System.out.println("data insert succ....");
+			}
+			else
+			{
+				System.out.println("Some problrm occur..........");
+			}
+			
+		}
+		else
+		{
+			System.out.println("some problem occur....");
+		}
+
+	}
+
+}

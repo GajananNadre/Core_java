@@ -1,0 +1,29 @@
+package org.tech;
+import java.sql.*;
+public class InsertApplication {
+
+	public static void main(String[] args)throws SQLException {
+		com.mysql.cj.jdbc.Driver d=new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(d);
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sqlpractical","root","Gajanan@123");
+		if(conn !=null)
+		{
+			System.out.println("Database connected succ......");
+			Statement smt=conn.createStatement();
+			int value=smt.executeUpdate("insert into Sudya values('Gaju',1,10000)");
+			if(value>0)
+			{
+				System.out.println("insert succ...");
+			}else
+			{
+				System.out.println("some problem occuer....");
+			}
+		}
+		else
+		{
+			System.out.println("some problem occur");
+		}
+
+	}
+
+}

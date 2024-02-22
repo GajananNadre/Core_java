@@ -1,0 +1,18 @@
+package File_Handling;
+import java.io.*;
+import java.util.*;
+public class SaveFileData {
+
+	public static void main(String[] args) throws Exception {
+		FileWriter fw=new FileWriter("F:\\project group 38\\ALL PDF\\Gaju.txt",true);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the data ");
+		String Data=sc.next();
+		fw.write(Data);
+		fw.close();
+		System.out.println("data save succ...");
+		
+
+	}
+
+}

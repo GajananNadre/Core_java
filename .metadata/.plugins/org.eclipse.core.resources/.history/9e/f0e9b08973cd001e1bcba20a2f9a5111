@@ -1,0 +1,13 @@
+package ExceptionHandApp;
+
+public class NumberFormatExApp {
+
+	public static void main(String[] args) {
+		int a[];
+		String s="1234 ";
+		a=Integer.parseInt(s);
+		System.out.println(a);
+
+	}
+
+}
